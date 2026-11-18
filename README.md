@@ -25,3 +25,15 @@ python3 download_speed.py https://example.com/file.bin --timeout 60
 ```bash
 python3 -m unittest -v
 ```
+
+## Веб-интерфейс
+
+Запустите локальный сервер:
+
+```bash
+python3 -m http.server 7777
+```
+
+Откройте в браузере `http://127.0.0.1:7777/web/` и укажите URL ресурса.
+
+Браузер разрешает JavaScript читать только ответы с CORS. Для проверки используйте URL, сервер которого отдаёт заголовок `Access-Control-Allow-Origin`.
